@@ -11,6 +11,10 @@ const refs = {
     body: document.querySelector('body'),
     startBtn: document.querySelector('[data-action="start"]'),
     stopBtn: document.querySelector('[data-action="stop"]'),
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 };
 
 const randomColor = (min, max) => {
@@ -32,6 +36,10 @@ function startChanging() {
 function stopChanging() {
     clearInterval(intervalID);
     refs.startBtn.removeAttribute('disabled');
+<<<<<<< Updated upstream
 }
 refs.startBtn.addEventListener('click', startChanging);
 refs.stopBtn.addEventListener('click', stopChanging);
+=======
+}
+>>>>>>> Stashed changes
