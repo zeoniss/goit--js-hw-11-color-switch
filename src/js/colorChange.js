@@ -21,25 +21,33 @@ const randomColor = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-function changeColor() {
-    const i = randomColor(0, colors.length - 1);
-    refs.body.setAttribute('style', `background-color: ${colors[i]}`);
+function nextColor() {
+    const nextColor = randomColor(0, colors.length - 1);
+    refs.body.setAttribute('style', `background-color: ${colors[nextColor]}`);
 }
 
-let intervalId = null;
+
+refs.startBtn.addEventListener('click', startChanging);
+refs.stopBtn.addEventListener('click', stopChanging);
+
+let intervalColor = 0;
 
 function startChanging() {
-    intervalID = setInterval(changeColor, 1000);
+    intervalColor = setInterval(nextColor, 1000);
     refs.startBtn.setAttribute('disabled', 'disabled');
 }
 
 function stopChanging() {
-    clearInterval(intervalID);
+    clearInterval(intervalColor);
     refs.startBtn.removeAttribute('disabled');
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 }
 refs.startBtn.addEventListener('click', startChanging);
 refs.stopBtn.addEventListener('click', stopChanging);
+=======
+}
+>>>>>>> Stashed changes
 =======
 }
 >>>>>>> Stashed changes

@@ -17,20 +17,20 @@ body {
 
 button {
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
     font-weight: 600;
-    font-size: 26px;
-    letter-spacing: 2px;
-    color: black;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: pink;
     padding: 15px 30px;
-    margin: 10px 20px;
-    border-radius: 25px;
-    border-color: green;
+    margin: 170px 150px;
+    border-radius: 50px;
+    border: 10px solid greenyellow;
     background-color: purple;
     cursor: pointer;
     outline: transparent;
 }
 
 button:disabled {
-    color: rgb(185, 178, 178);
+    color: white;
 }
